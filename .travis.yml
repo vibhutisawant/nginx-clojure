@@ -1,5 +1,6 @@
 sudo: required
 
+arch: s390x
 dist: xenial
 
 language: clojure
@@ -28,7 +29,7 @@ cache:
 
 env:
   global:
-    - LD_LIBRARY_PATH="$JAVA_HOME/jre/lib/amd64/server"
+    - LD_LIBRARY_PATH="$JAVA_HOME/jre/lib/s390x/server"
 #    - PCRE_VER=8.41
     - NGINX_VER=1.20.1  
 
